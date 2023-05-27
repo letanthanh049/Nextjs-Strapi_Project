@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sanphams",
+  "info": {
+    "singularName": "sanpham",
+    "pluralName": "sanphams",
+    "displayName": "Sanpham",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TenSP": {
+      "type": "string",
+      "required": true
+    },
+    "Mota": {
+      "type": "richtext"
+    },
+    "Profile": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "Sanpham"
+    },
+    "Hinhanh": {
+      "type": "text"
+    },
+    "Giatien": {
+      "type": "biginteger",
+      "required": true,
+      "default": "0"
+    },
+    "Chitiet_sanpham": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::chitiet-sanpham.chitiet-sanpham",
+      "mappedBy": "Sanpham"
+    }
+  }
+}

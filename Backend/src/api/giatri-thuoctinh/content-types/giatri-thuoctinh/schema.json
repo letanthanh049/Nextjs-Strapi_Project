@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "giatri_thuoctinhs",
+  "info": {
+    "singularName": "giatri-thuoctinh",
+    "pluralName": "giatri-thuoctinhs",
+    "displayName": "GiatriThuoctinh",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Thuoctinh_theloai": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thuoctinh-theloai.thuoctinh-theloai"
+    },
+    "Giatri": {
+      "type": "string"
+    }
+  }
+}

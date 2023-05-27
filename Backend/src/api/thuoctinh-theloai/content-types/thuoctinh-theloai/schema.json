@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thuoctinh_theloais",
+  "info": {
+    "singularName": "thuoctinh-theloai",
+    "pluralName": "thuoctinh-theloais",
+    "displayName": "ThuoctinhTheloai",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TenTT": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

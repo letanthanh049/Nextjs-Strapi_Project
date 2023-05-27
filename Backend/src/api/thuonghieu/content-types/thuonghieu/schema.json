@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thuonghieus",
+  "info": {
+    "singularName": "thuonghieu",
+    "pluralName": "thuonghieus",
+    "displayName": "Thuonghieu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TenTH": {
+      "type": "string",
+      "required": true
+    },
+    "Icon": {
+      "type": "string",
+      "default": "null"
+    }
+  }
+}

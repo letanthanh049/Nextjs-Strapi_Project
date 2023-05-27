@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mausacs",
+  "info": {
+    "singularName": "mausac",
+    "pluralName": "mausacs",
+    "displayName": "Mausac",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TenMau": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

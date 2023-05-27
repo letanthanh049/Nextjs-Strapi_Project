@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "theloais",
+  "info": {
+    "singularName": "theloai",
+    "pluralName": "theloais",
+    "displayName": "Theloai",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Mota": {
+      "type": "string",
+      "default": "null"
+    },
+    "TenTL": {
+      "type": "string"
+    },
+    "Mautheloai": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::mautheloai.mautheloai",
+      "inversedBy": "Theloai"
+    }
+  }
+}

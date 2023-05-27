@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mautheloais",
+  "info": {
+    "singularName": "mautheloai",
+    "pluralName": "mautheloais",
+    "displayName": "Mautheloai",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Theloai": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::theloai.theloai",
+      "mappedBy": "Mautheloai"
+    },
+    "Thuoctinh_theloai": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thuoctinh-theloai.thuoctinh-theloai"
+    }
+  }
+}

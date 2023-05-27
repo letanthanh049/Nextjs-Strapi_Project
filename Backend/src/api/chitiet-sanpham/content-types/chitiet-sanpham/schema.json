@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chitiet_sanphams",
+  "info": {
+    "singularName": "chitiet-sanpham",
+    "pluralName": "chitiet-sanphams",
+    "displayName": "ChitietSanpham",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Sanpham": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sanpham.sanpham",
+      "inversedBy": "Chitiet_sanpham"
+    },
+    "Danhmuc": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::danhmuc.danhmuc"
+    },
+    "Theloai": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::theloai.theloai"
+    },
+    "Mausac": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mausac.mausac"
+    },
+    "Size": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::size.size"
+    },
+    "Giatri_thuoctinh": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::giatri-thuoctinh.giatri-thuoctinh"
+    }
+  }
+}

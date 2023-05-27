@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "danhmucs",
+  "info": {
+    "singularName": "danhmuc",
+    "pluralName": "danhmucs",
+    "displayName": "Danhmuc",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TenDM": {
+      "type": "string"
+    },
+    "Theloai": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::theloai.theloai"
+    },
+    "Thuonghieu": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thuonghieu.thuonghieu"
+    }
+  }
+}
